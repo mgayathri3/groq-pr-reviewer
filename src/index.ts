@@ -9,7 +9,7 @@ async function run() {
   try {
     const githubToken = core.getInput("GITHUB_TOKEN") || process.env.GITHUB_TOKEN;
     const groqApiKey = core.getInput("GROQ_API_KEY") || process.env.GROQ_API_KEY;
-    const model = core.getInput("MODEL") || "llama-3.1-70b-versatile";
+    const model = core.getInput("MODEL") || "llama-3.1-8b-instant";
 
     if (!githubToken) {
       throw new Error("GITHUB_TOKEN is required");

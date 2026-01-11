@@ -5,7 +5,7 @@ export class GroqClient {
   private client: Groq;
   private model: string;
 
-  constructor(apiKey: string, model: string = "llama-3.1-70b-versatile") {
+  constructor(apiKey: string, model: string = "llama-3.1-8b-instant") {
     this.client = new Groq({ apiKey });
     this.model = model;
   }
