@@ -50,7 +50,7 @@ jobs:
         with:
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
           GROQ_API_KEY: \${{ secrets.GROQ_API_KEY }}
-          MODEL: "llama3-70b-8192" # Optional, defaults to 70b
+          MODEL: "llama-3.1-70b-versatile" # Optional, defaults to 70b
           exclude_files: "package-lock.json,yarn.lock"`;
 
   const secretCode = `GROQ_API_KEY=gsk_...
@@ -121,7 +121,7 @@ GITHUB_TOKEN=... (Automatically provided by GitHub Actions)`;
             <div className="mt-6 p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
               <h4 className="font-bold text-blue-400 mb-2">Note on Models</h4>
               <p className="text-sm text-blue-200/80">
-                We recommend using <code className="text-white">llama3-70b-8192</code> for the best balance of speed and reasoning capability. 
+                We recommend using <code className="text-white">llama-3.1-70b-versatile</code> for the best balance of speed and reasoning capability. 
                 The 8b model is faster but may miss subtle bugs.
               </p>
             </div>
