@@ -1,5 +1,3 @@
-# FORCE UPDATE - 11 Jan 2026
-
 name: AI PR Reviewer
 
 on:
@@ -11,21 +9,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build TypeScript
         run: npm run build
 
-      - name: Run AI Reviewer
+      - name: Run AI PR Reviewer
         run: node dist/index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
