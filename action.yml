@@ -1,0 +1,17 @@
+name: 'AI PR Reviewer'
+description: 'Analyze Pull Requests using Groq LLaMA3'
+author: 'Your Name'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub Token to access the repo'
+    required: true
+  GROQ_API_KEY:
+    description: 'Groq API Key'
+    required: true
+  MODEL:
+    description: 'Groq Model (default: llama3-8b-8192)'
+    required: false
+    default: 'llama3-8b-8192'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
