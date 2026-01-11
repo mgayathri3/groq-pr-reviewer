@@ -9,9 +9,9 @@ inputs:
     description: 'Groq API Key'
     required: true
   MODEL:
-    description: 'Groq Model (default: llama3-8b-8192)'
+    description: 'Groq Model (default: llama3-70b-8192)'
     required: false
-    default: 'llama3-8b-8192'
+    default: 'llama3-70b-8192'
 runs:
   using: 'node20'
   main: 'dist/index.js'

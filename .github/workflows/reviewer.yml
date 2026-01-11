@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build TypeScript
+      - name: Build project
         run: npm run build
 
       - name: Run AI PR Reviewer
