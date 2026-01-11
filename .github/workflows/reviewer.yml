@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Run AI Reviewer
-        uses: ./
+        run: node dist/index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
